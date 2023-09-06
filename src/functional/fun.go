@@ -1,4 +1,4 @@
-package main
+package functional
 
 import (
 	"fmt"
@@ -34,7 +34,7 @@ func routine(
 	channel <- signal
 }
 
-func main() {
+func RunFun() {
 	fmt.Println(ints)
 
 	go routine(items, channel1, 1, 1)
